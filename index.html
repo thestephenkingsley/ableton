@@ -14,24 +14,26 @@
   <body>
     <!-- HEADER -->
     <header id="header" class="header">
-      <div class="header__logo">
-        <svg
-          role="img"
-          aria-label="Logo Ableton"
-          class="header__logo--image"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-          width="45"
-          height="21"
-          viewBox="0 0 45 21"
-        >
-          <path
-            d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"
-          ></path>
-        </svg>
-      </div>
       <nav class="nav1">
         <ul class="nav1__items">
+          <li class="nav1__item nav1__item--logo">
+            <a href="/" aria-label="Ableton home">
+              <svg
+                role="img"
+                aria-hidden="true"
+                class="header__logo--image"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="21"
+                viewBox="0 0 45 21"
+              >
+                <path
+                  d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"
+                ></path>
+              </svg>
+            </a>
+          </li>
           <li class="nav1__item">
             <a class="nav1__link" href="http://">Live</a>
           </li>
@@ -60,20 +62,24 @@
             <a class="nav1__link" href="http://">More+</a>
           </li>
         </ul>
-      </nav>
-
-      <div class="login">
-        <a href="http://">Try Live 12 for free</a>
-        <a href="http://">Log in or register</a>
-      </div>
-      <div class="navs__divider"></div>
-      <nav class="nav2">
-        <ul class="nav2__items">
-          <li class="nav2__item">About</li>
-          <li class="nav2__item">Jobs</li>
-          <li class="nav2__item">Apprenticeships</li>
+         <ul class="nav2__items">
+          <li class="nav2__item"><a href="http://">Try Live 12 for free</a></li>
+        
+          <li class="nav2__item"><a href="http://">Log in or register</a></li>
         </ul>
       </nav>
+      <nav class="nav2">
+       
+      </nav>
+      <div class="navs__divider"></div>
+      <nav class="nav3">
+        <ul class="nav3__items">
+          <li class="nav3__item">About</li>
+          <li class="nav3__item">Jobs</li>
+          <li class="nav3__item">Apprenticeships</li>
+        </ul>
+      </nav>
+      
     </header>
     <!-- HERO IMAGE SECTION -->
     <section class="hero__section">
