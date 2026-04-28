@@ -6,52 +6,49 @@ body {
     margin: 0;
 }
 
-.header {
-    /* display: flex;
-    justify-content: space-around; */
-    /* width: 100%; */
-}
-
 .header__logo--image {
-    display: inline-block;
+    color: black;
 }
 
-.header--container {
-    
-    
-}
-
-
-.nav1 {
+.nav__primary {
     display: flex;
     justify-content: space-between;
 }
 
-.nav1__items {
+.nav__primary__items {
     list-style: none;
     display: flex;
     gap: 1rem;
-    padding-left: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.nav__primary__link {
+    text-decoration: none;
+    color: black;
+}
+
+.red {
+    color: red;
 }
 
 .header__logo--image {
     overflow-clip-margin: none;
 }
 
-.nav2 {
+.nav__secondary {
 }
 
-.nav2__items {
+.nav__secondary__items {
     list-style: none;
      display: flex;
      gap: 1rem;
 }
 
-.nav3 {
+.blue {
+    color: blue;
 }
 
-.nav3__items {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
+.nav__secondary__item {
+    
 }
