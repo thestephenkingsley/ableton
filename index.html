@@ -15,25 +15,23 @@
     <!-- HEADER -->
     <header id="header" class="header">
       <nav class="nav__primary">
-        <ul class="nav__primary__items">
-          <li class="nav__primary__item nav__primary__item--logo">
-            <a href="/" aria-label="Ableton home">
-              <svg
-                role="img"
-                aria-hidden="true"
-                class="header__logo--image"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                width="45"
-                height="21"
-                viewBox="0 0 45 21"
-              >
-                <path
-                  d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"
-                ></path>
-              </svg>
-            </a>
-          </li>
+        <a href="/" aria-label="Ableton home" class="nav__logo">
+          <svg
+            role="img"
+            aria-hidden="true"
+            class="header__logo--image"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="21"
+            viewBox="0 0 45 21"
+          >
+            <path
+              d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"
+            ></path>
+          </svg>
+        </a>
+        <ul class="nav__primary__items nav__primary__items--links">
           <li class="nav__primary__item">
             <a class="nav__primary__link" href="http://">Live</a>
           </li>
@@ -62,11 +60,19 @@
             <a class="nav__primary__link" href="http://">More+</a>
           </li>
         </ul>
-         <ul class="nav__primary__items">
-          <li class="nav__primary__item"><a href="http://" class="nav__primary__link blue">Try Live 12 for free</a></li>
-        
-          <li class="nav__primary__item"><a href="http://" class="nav__primary__link">Log in or register</a></li>
+        <ul class="nav__primary__items nav__primary__items--auth">
+          <li class="nav__primary__item">
+            <a href="http://" class="nav__primary__link blue">Try Live 12 for free</a>
+          </li>
+          <li class="nav__primary__item">
+            <a href="http://" class="nav__primary__link">Log in or register</a>
+          </li>
         </ul>
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
       
       <div class="navs__divider"></div>
@@ -375,5 +381,14 @@
         </svg>
       </div>
     </footer>
+    <script>
+      const hamburger = document.querySelector('.nav__hamburger');
+      const nav = document.querySelector('.nav__primary');
+
+      hamburger.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav--open');
+        hamburger.setAttribute('aria-expanded', isOpen);
+      });
+    </script>
   </body>
 </html>
